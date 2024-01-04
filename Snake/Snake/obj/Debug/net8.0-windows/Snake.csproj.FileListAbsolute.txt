@@ -1,0 +1,4 @@
+G:\Змійка\Snake\Snake\obj\Debug\net8.0-windows\MainWindow.g.cs
+G:\Змійка\Snake\Snake\obj\Debug\net8.0-windows\App.g.cs
+G:\Змійка\Snake\Snake\obj\Debug\net8.0-windows\Snake_MarkupCompile.cache
+G:\Змійка\Snake\Snake\obj\Debug\net8.0-windows\Snake_MarkupCompile.lref
