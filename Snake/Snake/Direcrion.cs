@@ -1,7 +1,4 @@
-﻿
-
-
-namespace Snake
+﻿namespace Snake
 {
     public class Direcrion
     {

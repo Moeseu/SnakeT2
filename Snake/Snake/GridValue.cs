@@ -1,5 +1,4 @@
-﻿
-namespace Snake
+﻿namespace Snake
 {
     public enum GridValue
     {

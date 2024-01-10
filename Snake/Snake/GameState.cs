@@ -44,7 +44,7 @@ namespace Snake
         {
             for (int r = 0; r < Rows; r++)
             {
-                for (int c = 0; c <= Cols; c++)
+                for (int c = 0; c < Cols; c++)
                 {
                     if (Grid[r, c] == GridValue.Empty)
                     {

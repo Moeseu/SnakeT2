@@ -20,7 +20,7 @@ namespace Snake
     /// </summary>
     public partial class MainWindow : Window
     {
-        private readonly Direcrion<GridValue, ImageSource> gridValToImage = new()
+        private readonly Dictionary<GridValue, ImageSource> gridValToImage = new()
         {
             { GridValue.Empty, Images.Empty },
             { GridValue.Snake, Images.Body },
@@ -29,16 +29,18 @@ namespace Snake
 
         private readonly int rows = 15, cols = 15;
         private readonly Image[,] gridImages;
+        private GameState gameState;
 
         public MainWindow()
         {
             InitializeComponent();
             gridImages = SetupGrid();
+            gameState = new GameState(rows, cols);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            Draw();
         }
 
         private void Window_KeyDown(object sender, KeyEventArgs e)
@@ -67,6 +69,23 @@ namespace Snake
             }
 
             return images;
+        }
+
+        private void Draw()
+        {
+            DrawGrid();
+        }
+
+        private void DrawGrid()
+        {
+            for(int r = 0;r < rows; r++)
+            {
+                for(int  c = 0; c < cols; c++)
+                {
+                    GridValue gridVal = gameState.Grid[r, c];
+                    gridImages[r, c].Source = gridValToImage[gridVal];
+                }
+            }
         }
     }
 }
