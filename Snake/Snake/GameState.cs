@@ -15,6 +15,7 @@ namespace Snake
         public int Score { get; private set; }
         public bool GameOver { get; private set; }
 
+        private readonly LinkedList<Direcrion> dirChanges = new LinkedList<Direcrion>();
         private readonly LinkedList<Position> snakePositions = new LinkedList<Position>();
         private readonly Random random = new Random();
 
@@ -95,9 +96,32 @@ namespace Snake
             snakePositions.RemoveLast();
         }
 
+        private Direcrion GetLastDirection()
+        {
+            if(dirChanges == 0)
+            {
+                return Dir;
+            }
+
+            return dirChanges.Last.Value;
+        }
+
+        private bool CanChangeDirection(Direcrion newDir)
+        {
+            if(dirChanges.Count == 2)
+            {
+                return false;
+            }
+
+            Direcrion lastDir = GetLastDirection();
+            return newDir != lastDir && newDir != lastDir.Opposite();
+        }
         public void ChangeDirection(Direcrion dir)
         {
-            Dir = dir;
+            if(CanChangeDirection(dir))
+            {
+                dirChanges.AddLast(dir);
+            }            
         }
 
         private bool OutsideGrid(Position pos)
@@ -121,6 +145,12 @@ namespace Snake
         }
         public void Move()
         {
+            if(dirChanges.Count > 0)
+            {
+                Dir = dirChanges.First.Value;
+                dirChanges.RemoveFirst();
+            }
+
             Position newHeadPos = HeadPosition().Translate(Dir);
             GridValue hit = WillHit(newHeadPos);
 

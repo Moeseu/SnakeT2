@@ -24,3 +24,9 @@ G:\Змійка\SnakeT2\Snake\Snake\obj\Debug\net8.0-windows\refint\Snake.dll
 G:\Змійка\SnakeT2\Snake\Snake\obj\Debug\net8.0-windows\Snake.pdb
 G:\Змійка\SnakeT2\Snake\Snake\obj\Debug\net8.0-windows\Snake.genruntimeconfig.cache
 G:\Змійка\SnakeT2\Snake\Snake\obj\Debug\net8.0-windows\ref\Snake.dll
+G:\Змійка\SnakeT2\Snake\Snake\bin\Debug\net8.0-windows\AssemblyInfo.cs
+G:\Змійка\SnakeT2\Snake\Snake\bin\Debug\net8.0-windows\Direcrion.cs
+G:\Змійка\SnakeT2\Snake\Snake\bin\Debug\net8.0-windows\GameState.cs
+G:\Змійка\SnakeT2\Snake\Snake\bin\Debug\net8.0-windows\GridValue.cs
+G:\Змійка\SnakeT2\Snake\Snake\bin\Debug\net8.0-windows\Images.cs
+G:\Змійка\SnakeT2\Snake\Snake\bin\Debug\net8.0-windows\Position.cs
