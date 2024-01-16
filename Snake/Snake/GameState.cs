@@ -98,7 +98,7 @@ namespace Snake
 
         private Direcrion GetLastDirection()
         {
-            if(dirChanges == 0)
+            if(dirChanges.Count == 0)
             {
                 return Dir;
             }
