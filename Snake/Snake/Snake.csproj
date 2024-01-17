@@ -9,13 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Body - Copy.png" />
-    <None Remove="Assets\DeadBody - Copy.png" />
-    <None Remove="Assets\DeadHead - Copy.png" />
-    <None Remove="Assets\DroidSansMono - Copy.ttf" />
-    <None Remove="Assets\Empty - Copy.png" />
-    <None Remove="Assets\Food - Copy.png" />
-    <None Remove="Assets\Head - Copy.png" />
+    <None Remove="Assets\Body.png" />
+    <None Remove="Assets\DeadBody.png" />
+    <None Remove="Assets\DeadHead.png" />
+    <None Remove="Assets\DroidSansMono.ttf" />
+    <None Remove="Assets\Empty.png" />
+    <None Remove="Assets\Food.png" />
+    <None Remove="Assets\Head.png" />
     <None Remove="Assets\icon.ico" />
     <None Remove="SnakeAssets\Body - Copy.png" />
     <None Remove="SnakeAssets\DeadBody - Copy.png" />
@@ -28,13 +28,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\Body - Copy.png" />
-    <Resource Include="Assets\DeadBody - Copy.png" />
-    <Resource Include="Assets\DeadHead - Copy.png" />
-    <Resource Include="Assets\DroidSansMono - Copy.ttf" />
-    <Resource Include="Assets\Empty - Copy.png" />
-    <Resource Include="Assets\Food - Copy.png" />
-    <Resource Include="Assets\Head - Copy.png" />
+    <Resource Include="Assets\Body.png" />
+    <Resource Include="Assets\DeadBody.png" />
+    <Resource Include="Assets\DeadHead.png" />
+    <Resource Include="Assets\DroidSansMono.ttf" />
+    <Resource Include="Assets\Empty.png" />
+    <Resource Include="Assets\Food.png" />
+    <Resource Include="Assets\Head.png" />
     <Resource Include="Assets\icon.ico" />
     <Resource Include="SnakeAssets\Body - Copy.png" />
     <Resource Include="SnakeAssets\DeadBody - Copy.png" />

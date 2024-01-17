@@ -53,6 +53,8 @@ namespace Snake
             await ShowCountDown();
             Overlay.Visibility = Visibility.Hidden;
             await GameLoop();
+            await ShowGameOver();
+            gameState = new GameState(rows, cols);
         }
 
         private async void Window_PreviewKeyDown(object sender, KeyEventArgs e)
@@ -167,7 +169,7 @@ namespace Snake
                 Position pos = positions[i];
                 ImageSource source = (i == 0) ? Images.DeadHead : Images.DeadBody;
                 gridImages[pos.Row, pos.Col].Source = source;
-                await Task.Delay(500);
+                await Task.Delay(50);
             }
         }
 
